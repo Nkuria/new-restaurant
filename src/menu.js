@@ -6,7 +6,6 @@ import {
 } from './menuObject';
 
 function menuPage(body) {
-  // const body = document.getElementById('content')
   const menuContainer = document.createElement('div');
   menuContainer.classList.add('menu-container');
   body.appendChild(menuContainer);

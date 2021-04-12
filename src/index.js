@@ -5,7 +5,6 @@ import aboutPage from './about';
 const body = document.getElementById('content');
 
 function navigation() {
-  // const body = document.getElementById('content');
   const navBar = document.createElement('div');
   navBar.classList.add('nav-bar');
   body.appendChild(navBar);
