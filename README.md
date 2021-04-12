@@ -40,7 +40,7 @@ The DOM Elements are build mainly from JS:
 
 ### clone the repo.
 - in your terminal,  run
-``` git clone https://github.com/Nkuria/resturant.git ```
+``` git clone https://github.com/Nkuria/new-restaurant.git ```
 - open the directory
 ``` cd resturant```
 - Open the ``` dist/index.html``` file in the browser.
