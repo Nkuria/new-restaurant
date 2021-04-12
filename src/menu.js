@@ -5,7 +5,7 @@ import {
   deserts,
 } from './menuObject';
 
-function menuPage(body) {
+const menuPage = (body) => {
   const menuContainer = document.createElement('div');
   menuContainer.classList.add('menu-container');
   body.appendChild(menuContainer);
@@ -22,7 +22,7 @@ function menuPage(body) {
   menuHeader2.classList.add('menu-header2');
   menuContainer.appendChild(menuHeader2);
 
-  function foodLoops() {
+  const foodLoops = () => {
     const foodContainer = document.createElement('div');
     foodContainer.classList.add('food-container');
     menuContainer.appendChild(foodContainer);
@@ -31,7 +31,7 @@ function menuPage(body) {
     leftMenu.classList.add('left-menu');
     foodContainer.appendChild(leftMenu);
 
-    function MainFoodPart() {
+    const MainFoodPart = () => {
       const MainFoodHeader = document.createElement('h3');
       MainFoodHeader.classList.add('food-header');
       const MainFoodHeaderText = document.createTextNode('Main Course');
@@ -55,9 +55,9 @@ function menuPage(body) {
         saladIng.appendChild(saladIngText);
         leftMenu.appendChild(saladIng);
       }
-    }
+    };
 
-    function desertsPart() {
+    const desertsPart = () => {
       const MainFoodHeader = document.createElement('h3');
       MainFoodHeader.classList.add('food-header');
       const MainFoodHeaderText = document.createTextNode('Deserts');
@@ -81,13 +81,13 @@ function menuPage(body) {
         saladIng.appendChild(saladIngText);
         leftMenu.appendChild(saladIng);
       }
-    }
+    };
 
     const rightMenu = document.createElement('div');
     leftMenu.classList.add('right-menu');
     foodContainer.appendChild(rightMenu);
 
-    function drinksPart() {
+    const drinksPart = () => {
       const MainFoodHeader = document.createElement('h3');
       MainFoodHeader.classList.add('food-header');
       const MainFoodHeaderText = document.createTextNode('Drinks');
@@ -111,9 +111,9 @@ function menuPage(body) {
         saladIng.appendChild(saladIngText);
         rightMenu.appendChild(saladIng);
       }
-    }
+    };
 
-    function saladsPart() {
+    const saladsPart = () => {
       const MainFoodHeader = document.createElement('h3');
       MainFoodHeader.classList.add('food-header');
       const MainFoodHeaderText = document.createTextNode('Salads');
@@ -137,13 +137,13 @@ function menuPage(body) {
         saladIng.appendChild(saladIngText);
         rightMenu.appendChild(saladIng);
       }
-    }
+    };
 
     MainFoodPart();
     desertsPart();
     drinksPart();
     saladsPart();
-  }
+  };
   foodLoops();
-}
+};
 export { menuPage as default };

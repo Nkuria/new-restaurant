@@ -1,6 +1,6 @@
 import tableImge from './assets/images/pexels-ella-olsson-1640777.jpg';
 
-function aboutPage(body) {
+const aboutPage = (body) => {
   const aboutContainer = document.createElement('div');
   body.appendChild(aboutContainer);
   aboutContainer.classList.add('about-container');
@@ -17,5 +17,5 @@ function aboutPage(body) {
   );
   aboutPar.appendChild(aboutParText);
   aboutContainer.appendChild(aboutPar);
-}
+};
 export { aboutPage as default };

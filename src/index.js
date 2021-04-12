@@ -4,7 +4,7 @@ import aboutPage from './about';
 
 const body = document.getElementById('content');
 
-function navigation() {
+const navigation = () => {
   const navBar = document.createElement('div');
   navBar.classList.add('nav-bar');
   body.appendChild(navBar);
@@ -42,14 +42,14 @@ function navigation() {
     navigation();
     aboutPage(body);
   });
-}
+};
 
-function homePage() {
+const homePage = () => {
   const mainContainer = document.createElement('div');
   mainContainer.classList.add('main-container-home');
   body.appendChild(mainContainer);
 
-  function leftGrid() {
+  const leftGrid = () => {
     const leftHome = document.createElement('div');
     mainContainer.appendChild(leftHome);
     leftHome.classList.add('left-home');
@@ -75,16 +75,16 @@ function homePage() {
       navigation();
       menuPage(body);
     });
-  }
+  };
 
-  function rightGrid() {
+  const rightGrid = () => {
     const rightHome = document.createElement('img');
     mainContainer.appendChild(rightHome);
     rightHome.classList.add('right-home');
     rightHome.src = homeFood;
-  }
+  };
   leftGrid();
   rightGrid();
-}
+};
 navigation();
 homePage();
